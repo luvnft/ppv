@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import ContentSection from "~/components/content-section.astro";
+import ShowcaseCard from "~/components/showcase-card.astro";
+
+const featuredSites = await getCollection(
+  "showcase",
+  ({ data }) => "featured" in data,
+);
+const orderedSites = featuredSites.sort(
+  (a, b) => a.data.featured! - b.data.featured!,
+);
+---
+
+<ContentSection title="Bitcoin CRE" id="proyectos">
+  <Fragment slot="lead">
+    The CRE Club is only accepting new members that own a Bitcoin <a href="https://magiceden.io/ordinals/wallet?walletAddress=bc1q5nry3z9achecr58ktcvm4dsu5te5vrdrxtgsf0" target="_blank" rel="noopener noreferrer"><span class="text-primary">CRE</span></a>, hold <a href="https://unisat.io/market/brc20?tick=$RNT" target="_blank" rel="noopener noreferrer"><span class="text-primary">$RNT</span></a>
+    or contribute to the <a href="https://app.uniswap.org/pools/716981" target="_blank" rel="noopener noreferrer"><span class="text-primary">$RNT pool</span></a> on Uniswap.
+    Contact us with your #inscription number in your application below.
+  </Fragment>
+  
+  <div class="max-w-6xl space-y-2">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {orderedSites.map((site) => <ShowcaseCard site={site} />)}
+    </div>
+  </div>
+</ContentSection>

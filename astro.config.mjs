@@ -5,7 +5,7 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://goldengrowth.agency",
+  site: "https://creclub.arvrtise.com",
   integrations: [tailwind(), icon(), lottie()],
   styles: ["./src/styles/index.css"],
 });

@@ -124,76 +124,67 @@ a,
   }
 }
 
-/* Emoji class definitions with increased size */
-.emoji-TV::before {
-  content: "📺";
+/* Emoji class definitions with improved centering */
+.emoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Noto Color Emoji", sans-serif;
   font-size: 4em; /* Adjust this value as needed */
+}
+
+/* Individual emoji classes */
+.emoji-TV::before {
+  content: "📺";
 }
 
 .emoji-Tree::before {
   content: "🏝️";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 4em; /* Adjust this value as needed */
 }
 
 .emoji-Gem::before {
   content: "💎";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 4em; /* Adjust this value as needed */
 }
 
 .emoji-Tip::before {
   content: "💸";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 4em; /* Adjust this value as needed */
 }
 
 .emoji-Ads::before {
   content: "📣";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 4em; /* Adjust this value as needed */
 }
 
 .emoji-Hahz::before {
   content: "⚡";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 4em; /* Adjust this value as needed */
 }
 
 .emoji-Love::before {
   content: "🫶";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 4em; /* Adjust this value as needed */
 }
 
 .emoji-PPV::before {
   content: "🎥";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 4em; /* Adjust this value as needed */
 }
 
 .emoji-Find::before {
   content: "🔍";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 4em; /* Adjust this value as needed */
 }
 
 .emoji-Star::before {
   content: "⭐";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 4em; /* Adjust this value as needed */
 }
 
 .emoji-Z::before {
   content: "🟠";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 4em; /* Adjust this value as needed */
 }
 
 .emoji-Live::before {
   content: "👁️";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 4em; /* Adjust this value as needed */
 }
 
+/* Center emojis in mobile view */
+@media (max-width: 767px) {
+  .emoji {
+    font-size: 3em; /* Adjust the size for mobile */
+  }
+}

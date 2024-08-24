@@ -1,3 +1,14 @@
+/* Define the Noto Color Emoji font */
+@font-face {
+  font-family: "Noto Color Emoji";
+  src: url("/fonts/noto-color-emoji.woff2") format("woff2"),
+       url("/fonts/noto-color-emoji.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Existing CSS code */
+
 @media (min-width: 1024px) {
   body {
     cursor: none;
@@ -17,7 +28,7 @@
     background-color: theme("colors.yellow.400");
   }
 
-  .cursor-outline{
+  .cursor-outline {
     width: 30px;
     height: 30px;
     border: 2px solid theme("colors.yellow.500");
@@ -70,7 +81,7 @@ a,
   animation: fade_move_down 4s ease-in-out infinite;
 }
 
-/*animated scroll arrow animation*/
+/* Animated scroll arrow animation */
 @-webkit-keyframes fade_move_down {
   0% {
     -webkit-transform: translate(0, -10px) rotate(45deg);
@@ -109,4 +120,9 @@ a,
     transform: translate(0, 10px) rotate(45deg);
     opacity: 0;
   }
+}
+
+/* Noto Color Emoji font class */
+.noto-color-emoji-regular {
+  font-family: "Noto Color Emoji", sans-serif;
 }

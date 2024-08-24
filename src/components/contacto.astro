@@ -3,11 +3,10 @@ import ContentSection from "~/components/content-section.astro";
 const { site } = Astro;
 ---
 
-<ContentSection title="Contact Us" id="contacto">
+<ContentSection title="Contact" id="contacto">
   <Fragment slot="lead">
     <span>
-      CRE Club is a private  <span class="text-primary"></span>members-only</span> club that requires an approved 
-      application to join.
+      Do you have an unique <span class="text-primary"></span>PPV GEM</span> idea that you want to discuss? 
     </span>
   </Fragment>
   <section>
@@ -22,14 +21,14 @@ const { site } = Astro;
         <div class="flex-row lg:flex lg:gap-x-4">
           <div class="lg:mb-6 w-full lg:mb-0">
             <label for="nombre" class="mb-2 block font-medium text-sm"
-              >#Inscription Number</label
+              >Name</label
             >
             <input
               type="text"
               id="nombre"
               name="nombre"
               class="block w-full rounded-lg border border-input bg-contactInput p-2.5 text-default placeholder-default shadow-sm text-sm"
-              placeholder="Inscription Number"
+              placeholder="PPV GEM Username"
               required
             />
           </div>
@@ -57,7 +56,7 @@ const { site } = Astro;
             minlength="10"
             name="mensaje"
             class="block max-h-60 min-h-24 w-full rounded-lg border border-input bg-contactInput p-2.5 text-default placeholder-default shadow-sm text-sm"
-            placeholder="I want to tokenize my CRE portfolio"
+            placeholder="I want to Arvrtise my..."
             required></textarea>
         </div>
         <button

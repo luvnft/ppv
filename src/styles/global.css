@@ -1,3 +1,6 @@
+/* Import Noto Color Emoji font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
 /* Define the Noto Color Emoji font */
 @font-face {
   font-family: "Noto Color Emoji";
@@ -8,7 +11,6 @@
 }
 
 /* Existing CSS code */
-
 @media (min-width: 1024px) {
   body {
     cursor: none;
@@ -122,7 +124,76 @@ a,
   }
 }
 
-/* Noto Color Emoji font class */
-.noto-color-emoji-regular {
+/* Emoji class definitions with increased size */
+.emoji-TV::before {
+  content: "📺";
   font-family: "Noto Color Emoji", sans-serif;
+  font-size: 4em; /* Adjust this value as needed */
 }
+
+.emoji-Tree::before {
+  content: "🏝️";
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 4em; /* Adjust this value as needed */
+}
+
+.emoji-Gem::before {
+  content: "💎";
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 4em; /* Adjust this value as needed */
+}
+
+.emoji-Tip::before {
+  content: "💸";
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 4em; /* Adjust this value as needed */
+}
+
+.emoji-Ads::before {
+  content: "📣";
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 4em; /* Adjust this value as needed */
+}
+
+.emoji-Hahz::before {
+  content: "⚡";
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 4em; /* Adjust this value as needed */
+}
+
+.emoji-Love::before {
+  content: "🫶";
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 4em; /* Adjust this value as needed */
+}
+
+.emoji-PPV::before {
+  content: "🎥";
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 4em; /* Adjust this value as needed */
+}
+
+.emoji-Find::before {
+  content: "🔍";
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 4em; /* Adjust this value as needed */
+}
+
+.emoji-Star::before {
+  content: "⭐";
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 4em; /* Adjust this value as needed */
+}
+
+.emoji-Z::before {
+  content: "🟠";
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 4em; /* Adjust this value as needed */
+}
+
+.emoji-Live::before {
+  content: "👁️";
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 4em; /* Adjust this value as needed */
+}
+

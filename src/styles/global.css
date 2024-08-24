@@ -124,75 +124,75 @@ a,
   }
 }
 
-/* Emoji class definitions */
+/* Emoji class definitions with centering and size */
+.emoji-TV::before,
+.emoji-Tree::before,
+.emoji-Gem::before,
+.emoji-Tip::before,
+.emoji-Ads::before,
+.emoji-Hahz::before,
+.emoji-Love::before,
+.emoji-PPV::before,
+.emoji-Find::before,
+.emoji-Star::before,
+.emoji-Z::before,
+.emoji-Live::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 400px; /* Set emoji size to 400px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Ensure the container takes full width */
+  height: 400px; /* Set height to match the emoji size */
+  line-height: 400px; /* Center the emoji vertically */
+}
+
+/* Individual emojis */
 .emoji-TV::before {
   content: "📺";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 400px; /* Adjust this value as needed */
 }
 
 .emoji-Tree::before {
   content: "🏝️";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 400px; /* Adjust this value as needed */
 }
 
 .emoji-Gem::before {
   content: "💎";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 400px; /* Adjust this value as needed */
 }
 
 .emoji-Tip::before {
   content: "💸";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 400px; /* Adjust this value as needed */
 }
 
 .emoji-Ads::before {
   content: "📣";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 400px; /* Adjust this value as needed */
 }
 
 .emoji-Hahz::before {
   content: "⚡";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 400px; /* Adjust this value as needed */
 }
 
 .emoji-Love::before {
   content: "🫶";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 400px; /* Adjust this value as needed */
 }
 
 .emoji-PPV::before {
   content: "🎥";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 400px; /* Adjust this value as needed */
 }
 
 .emoji-Find::before {
   content: "🔍";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 400px; /* Adjust this value as needed */
 }
 
 .emoji-Star::before {
   content: "⭐";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 400px; /* Adjust this value as needed */
 }
 
 .emoji-Z::before {
   content: "🟠";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 400px; /* Adjust this value as needed */
 }
 
 .emoji-Live::before {
   content: "👁️";
-  font-family: "Noto Color Emoji", sans-serif;
-  font-size: 400px; /* Adjust this value as needed */
 }

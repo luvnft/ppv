@@ -138,7 +138,7 @@ a,
 .emoji-Z::before,
 .emoji-Live::before {
   font-family: "Noto Color Emoji", sans-serif;
-  font-size: 400px; /* Set emoji size to 400px */
+  font-size: 333px; /* Set emoji size to 400px */
   display: flex;
   justify-content: center;
   align-items: center;

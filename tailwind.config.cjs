@@ -1,10 +1,14 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: ["./src/**/*.{astro,html,css,js,jsx,svelte,ts,tsx,vue}"],
+  content: [
+    "./src/**/*.{astro,html,css,js,jsx,svelte,ts,tsx,vue}",
+  ],
   theme: {
     extend: {
       fontFamily: {
+        // Add Noto Color Emoji as a font family for emojis
+        emoji: ['"Noto Color Emoji"', ...defaultTheme.fontFamily.sans],
         sans: ["Inter Variable", ...defaultTheme.fontFamily.sans],
       },
       colors: {
@@ -45,7 +49,7 @@ module.exports = {
     },
   },
   corePlugins: {
-    fontSize: false,
+    fontSize: false, // If you're not using fontSize utilities
   },
   plugins: [require("tailwindcss-fluid-type")],
 };

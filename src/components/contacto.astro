@@ -3,75 +3,78 @@ import ContentSection from "~/components/content-section.astro";
 const { site } = Astro;
 ---
 
-<ContentSection title="Contact" id="contacto">
+<ContentSection title="Contact" id="contact">
   <Fragment slot="lead">
     <span>
-      Do you have an unique <span class="text-primary"></span>PPV GEM</span> idea that you want to discuss? 
+      Do you have a unique <span class="text-primary">TWERK.DANCE</span> show idea you'd like to share with us?
     </span>
   </Fragment>
+
   <section>
     <div class="mx-auto px-4 py-8 mobile:min-w-96 md:min-w-176 lg:py-6">
       <form
         class="space-y-8"
         accept-charset="utf-8"
-        name="form-contacto"
-        action="https://formsubmit.co/info@arvrtise.com"
+        name="contact-form"
+        action="https://formsubmit.co/ppv@twerk.dance"
         method="post"
       >
         <div class="flex-row lg:flex lg:gap-x-4">
-          <div class="lg:mb-6 w-full lg:mb-0">
-            <label for="nombre" class="mb-2 block font-medium text-sm"
-              >Name</label
-            >
+          <div class="w-full lg:mb-6">
+            <label for="name" class="mb-2 block text-sm font-medium">
+              Name
+            </label>
             <input
               type="text"
-              id="nombre"
-              name="nombre"
-              class="block w-full rounded-lg border border-input bg-contactInput p-2.5 text-default placeholder-default shadow-sm text-sm"
-              placeholder="PPV GEM Username"
+              id="name"
+              name="name"
+              class="block w-full rounded-lg border border-input bg-contactInput p-2.5 text-sm text-default placeholder-default shadow-sm"
+              placeholder="Your Telegram username"
               required
             />
           </div>
-          <div class="lg:mb-6 w-full lg:mb-0">
-            <label for="email" class="mb-2 block font-medium text-sm"
-              >Email</label
-            >
+          <div class="w-full lg:mb-6">
+            <label for="email" class="mb-2 block text-sm font-medium">
+              Email
+            </label>
             <input
               type="email"
               id="email"
               name="email"
-              class="block w-full rounded-lg border border-input bg-contactInput p-2.5 text-default placeholder-default shadow-sm text-sm"
-              placeholder="info@arvrtise.com"
+              class="block w-full rounded-lg border border-input bg-contactInput p-2.5 text-sm text-default placeholder-default shadow-sm"
+              placeholder="my@emailaddy.com"
               required
             />
           </div>
         </div>
+
         <div class="sm:col-span-2">
-          <label for="mensaje" class="mb-2 block font-medium text-sm"
-            >Your message</label
-          >
+          <label for="message" class="mb-2 block text-sm font-medium">
+            Your Message
+          </label>
           <textarea
-            id="mensaje"
+            id="message"
+            name="message"
             rows="6"
             minlength="10"
-            name="mensaje"
-            class="block max-h-60 min-h-24 w-full rounded-lg border border-input bg-contactInput p-2.5 text-default placeholder-default shadow-sm text-sm"
-            placeholder="I want to Arvrtise my..."
-            required></textarea>
+            class="block w-full min-h-24 max-h-60 rounded-lg border border-input bg-contactInput p-2.5 text-sm text-default placeholder-default shadow-sm"
+            placeholder="Show us why you'd make a great TWERK.DANCE star!"
+            required
+          ></textarea>
         </div>
+
         <button
           type="submit"
-          class="min-w-72 rounded-lg bg-gradient-to-br from-yellow-500 to-yellow-600 px-5 py-3 text-center font-medium text-white duration-300 text-sm hover:scale-105 focus:outline-none focus:ring-4 mobile:min-w-96 md:min-w-176"
-          >Send message</button
+          class="min-w-72 mobile:min-w-96 md:min-w-176 rounded-lg bg-gradient-to-br from-yellow-500 to-yellow-600 px-5 py-3 text-center text-sm font-medium text-white duration-300 hover:scale-105 focus:outline-none focus:ring-4"
         >
+          Send Message
+        </button>
+
+        <!-- FormSubmit.co hidden inputs -->
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value={`${site}`} />
         <input type="hidden" name="_template" value="box" />
-        <input
-          type="hidden"
-          name="_cc"
-          value="info@arvrtise.com"
-        />
+        <input type="hidden" name="_cc" value="ppv@twerk.dance" />
       </form>
     </div>
   </section>

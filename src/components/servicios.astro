@@ -1,99 +1,97 @@
 ---
 import ContentSection from "~/components/content-section.astro";
-// import LottieAnimation from "astro-integration-lottie/Lottie.astro"; // Removed
 import type { ServiceItem } from "~/types";
 import FeaturesList from "~/components/features-list.astro";
 
 const services: Array<ServiceItem> = [
   { 
-    title: "HAHZ.ARVRTISE", 
-    subtitle: "Bitcoin Reddit", 
-    description: "Arvrtise your PPV GEM trading cards on HAHZ a Reddit-like platform that allows users to upvote and downvote with Bitcoin. 📙 Use the #PPVGEM Hahztag with each post and tell your fans to ⚡️🔺 your content as a GTM PPV GEM drop marketing campaign. A HahzTag allows playas to find exclusive content on social media. Leave your Bitcoin wallet address to receive Bitcoin L$VE.", 
+    title: "TIPS", 
+    subtitle: "Crypto", 
+    description: "💃 No tips, no twerk. Drop $WATAA or Bitcoin L$VE or she FREEZES. 🥶💸 Pay to play, bae.", 
     img: "emoji-Hahz", 
-    list1: "Strategic management of communication across relevant social media platforms.", 
-    list2: "Amplification of your brand in digital landscapes.", 
-    list3: "Enhancement of your tokenized digital properties", 
-    list4: "Continuous optimization of your digital presence.", 
+    list1: "🔥 Tip to unlock live shows",
+    list2: "🎯 Crypto-powered hype",
+    list3: "💬 Real-time fan engagement",
+    list4: "📈 Grow your wallet + views",
   },
   { 
-    title: "PPV LINK", 
-    subtitle: "PPV.ARVRTISE.LINK", 
-    description: "PPV GEM has its own version of Linktree for creators to Arvrtise different digital A$$ drops, on-demand PPV, BLVE vids, Hahz links or HahzTags. 🔗 Link Ad = 5 TON 🏝️ Custom Menu Domain Link = 44 TON", 
+    title: "MENU", 
+    subtitle: "Twerktree", 
+    description: "🌳 One link, all twerk. Verified stream links like Linktree but for booty shakers.", 
     img: "emoji-Tree", 
-    list1: "Crafting 1 of 1 Bitcoin CRE", 
-    list2: "Thorough review of corporate image, colors, and identity.", 
-    list3: "Transformation of ideas into a visually impactful identity.", 
-    list4: "Standing out in the marketplace with a cohesive and compelling visual communication.", 
+    list1: "👑 Verified twerkers only",
+    list2: "📺 Instant access to lives",
+    list3: "💬 Chat & tip directly",
+    list4: "🛒 Link to buy merch & NFTs",
   },
   {
-    title: "BLVE.ARVRTISE",
-    subtitle: "Adult YouTube",
-    description: "BLVE is the adult YouTube-like platform that allows a PPV GEM creators to earn 💯 in Bitcoin L$VE tips from fans and a flat rate pricing for 1M views equals $2200 USD/Bitcoin L$VE paid monthly. 📙 BLVE on-demand content is a PPV GEM option with the HahzTag 📺",
+    title: "TV",
+    subtitle: "Blockchain TikTok",
+    description: "📺 TV™ 🍑✨—Post twerk vids. Get crypto tips. No middleman. Just straight L$VE. 💸🔥",
     img: "emoji-TV",
-    list1: "Create affordable CRE rentals.",
-    list2: "Development of effective strategies through testing and data analysis.",
-    list3: "Continuous improvement to reach new levels of success.",
-    list4: "Focus on optimization and long-term success.",
+    list1: "🎥 Upload + earn",
+    list2: "🌍 Global twerk stage",
+    list3: "💰 Crypto direct to wallet",
+    list4: "📲 Just twerk. Just tip.",
   },
   { 
-    title: "PPV.ARVRTISE",
-    subtitle: "PPV Reels",
-    description: "Creators earn 💯 in $TON paid directly to the Telegram wallet from every PPV view 24/7 365. 📙 PPV on-demand content is a PPV GEM option with the HahzTag 🎥", 
+    title: "REELS",
+    subtitle: "Upvote",
+    description: "🔥 Post a reel. Hit 50 upvotes. Get a livestream slot. Fans, get your bags ready! 💼💃", 
     img: "emoji-PPV", 
-    list1: "Design and execution of high-impact social media campaigns.", 
-    list2: "Focus on key objectives such as online sales, lead generation, and branding.", 
-    list3: "Tangible results in the short term to drive the success of your business.", 
-    list4: "Campaigns focused on increasing foot traffic and calls.", 
+    list1: "🚀 Viral = live show",
+    list2: "📢 Fans vote you in",
+    list3: "🎥 Clips = casting call",
+    list4: "📅 Auto-scheduled gigs",
   },
   { 
-    title: "Bitcoin L$VE", 
-    subtitle: "PPV Tips", 
-    description: "PPV GEM creators sell their fans their Bitcoin L$VE Cash Money for access to X amount of Z live streaming, BLVE content, and for tipping. ", 
+    title: "L$VE", 
+    subtitle: "Bitcoin", 
+    description: "📙 Learn how to mint L$VE & twerk globally for tips in Bitcoin. Stack sats while you shake 🍑💻", 
     img: "emoji-Love", 
-    list1: "Custom websites that reflect the unique essence of your brand.", 
-    list2: "Responsive across all devices.", 
-    list3: "Engaging design that captivates your audience.", 
-    list4: "Implementation of the latest technologies for an optimal online presence.", 
+    list1: "🧠 Learn to mint",
+    list2: "🌍 Global twerk income",
+    list3: "🔗 Connect to crypto fans",
+    list4: "💼 Build your twerk biz",
   },
   { 
-    title: "TELEGRAM ADS", 
-    subtitle: "PPV Ads", 
-    description: "Arvrtise your PPV GEM content with a Telegram ad campaign to drive traffic to your digital A$$.", 
+    title: "SPONSOR", 
+    subtitle: "ADS", 
+    description: "📢 Sponsor a Twerk Verzus 🥵. Get a 60s ad + crypto fans in your lane. Front row to the twerkfest.", 
     img: "emoji-Ads", 
-    list1: "Captivating videos that amplify your message in a unique way.", 
-    list2: "Expert editing that sets you apart and positions you for organic growth.", 
-    list3: "Especially effective on platforms like TikTok and Instagram.", 
-    list4: "Maximize the impact of your video content.", 
+    list1: "🔥 Boost your brand",
+    list2: "🎯 Target crypto fans",
+    list3: "📺 Twerk battle ads",
+    list4: "💥 Instant viral potential",
   },
   { 
-    title: "HahzTag", 
-    subtitle: "Discover Gems", 
-    description: "Gemologist PPV GEM holders are day traders who build their tribes by creating content around the GEMs they own. They attract buyers by flossing their bag on social media with the HahzTag assocated with the digital A$$.", 
+    title: "GEMOLOGIST", 
+    subtitle: "Blockchain Career", 
+    description: "🍑📈 Twerk day traders unite. Join the Telegram. Build NFT bags. The more cake you own, the more cake you see 🍰👀", 
     img: "emoji-Find", 
-    list1: "Advanced strategies to boost your online presence.", 
-    list2: "Organic search engine ranking optimization.", 
-    list3: "Consistent increase in potential customers to your website.", 
-    list4: "Fueling the growth of your business through effective strategies.", 
+    list1: "📊 Trade twerk NFTs",
+    list2: "👑 Private squad access",
+    list3: "💬 Daily alpha & drops",
+    list4: "🧠 Learn from booty billionaires",
   },
   { 
-    title: "Z.ARVRTISE", 
-    subtitle: "PPV Twitch", 
-    description: " Arvrtise Z is a Bitcoin streaming platform that pays streamers 💯 in instant Bitcoin Zap tips. We also offer a unique live streaming experience: Holders of PPV GEMs can chat 1-on-1 with streamers, based on the duration of their purchased PPV GEM, to unlock exclusive private live streams. 📙Z stream on-demand content is a PPV GEM option with the HahzTag 🟠", 
+    title: "ORANGE", 
+    subtitle: "Twerk Twitch", 
+    description: "🟠 Set room rates. Private streams. Pay to unlock spicy moves. No $WATAA? Stream STOPS.⛔", 
     img: "emoji-Z", 
-    list1: "High-impact advertising strategies across multiple platforms.", 
-    list2: "Driving highly qualified traffic to your digital properties.", 
-    list3: "Focus on generating sales, capturing leads, and more.", 
-    list4: "Maximizing the return on your online presence.", 
+    list1: "💸 Custom tip goals",
+    list2: "🔒 Private fan-only access",
+    list3: "💥 Mid-stream tip triggers",
+    list4: "🚫 No tip, no show",
   },
 ];
 ---
 
-<ContentSection title="The Game Guide" id="solutions">
+<ContentSection title="TWERKONOMY" id="solutions">
   <Fragment slot="lead">
-    Ready to Play? Join the PPV GEM Telegram to Get in the Game! 
     <a href="https://t.me/+2KBvu5JMHYk4MDdh" target="_blank" rel="noopener noreferrer" class="text-primary">Subscribe</a>
-    and get ready to own the game! 
-    Invest in exclusive digital A$$ merch—either with a fixed price or in an auction (lasting 1 to 7 days).
+    to the TWERK.DANCE Telegram channel to tap in with the squad 💬. Vote on who you wanna see twerk live 🔥 and cop exclusive
+    digital A$$ merch—available at a fixed price or up for grabs in 1–7 day auctions 💸.
   </Fragment>
 
   {
@@ -111,6 +109,13 @@ const services: Array<ServiceItem> = [
               <p class="text-balance font-normal text-gris text-base">
                 {service.description}
               </p>
+              <ul class="emoji-bullets">
+                <li>{service.list1}</li>
+                <li>{service.list2}</li>
+                <li>{service.list3}</li>
+                <li>{service.list4}</li>
+              </ul>
+              <button class="mt-4 px-5 py-2 bg-yellow-500 text-white rounded-full text-sm hover:bg-yellow-600">Join Now</button>
             </div>
             <div class="my-6 justify-center md:my-12 md:w-1/2">
               <div class="m-auto max-w-80 md:max-w-sm 2xl:max-w-lg">
@@ -135,6 +140,13 @@ const services: Array<ServiceItem> = [
               <p class="font-normal text-gris text-base">
                 {service.description}
               </p>
+              <ul class="emoji-bullets">
+                <li>{service.list1}</li>
+                <li>{service.list2}</li>
+                <li>{service.list3}</li>
+                <li>{service.list4}</li>
+              </ul>
+              <button class="mt-4 px-5 py-2 bg-yellow-500 text-white rounded-full text-sm hover:bg-yellow-600">Join Now</button>
             </div>
           </div>
         )}
@@ -142,6 +154,3 @@ const services: Array<ServiceItem> = [
     ))
   }
 </ContentSection>
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');

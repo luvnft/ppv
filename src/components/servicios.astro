@@ -5,80 +5,102 @@ import FeaturesList from "~/components/features-list.astro";
 
 const services: Array<ServiceItem & { ctaUrl: string }> = [
   { 
-    title: "L$VE", 
-    subtitle: "BITCOIN", 
-    description: "💃 No tips, no twerk. Make it rain Solana $WATAA memecoins or show her Bitcoin L$VE or she FREEZES. 🥶💸 Pay to play, bae.",
+    title: "SUB", 
+    subtitle: "🔍", 
+    description: "Subscribe to our private Telegram to get in the game fans own and control.", 
+    img: "Find", 
+    list1: "Join the bros investing in digital A$$-ets",
+    list2: "Submit a short reel to join Twerkrz team",
+    list3: "Vote on the Twerkrz you want to see live",
+    list4: "Promote your Dmerch and livestreams",
+    ctaUrl: "https://t.me/+1aj06-wtA1kyMzcx"
+  },
+  { 
+    title: "LEARN $BTC", 
+    subtitle: "📙", 
+    description: "Learn how to mint and sell Bitcoin L$VE to your fans & twerk for a living.", 
+    img: "Learn", 
+    list1: "Take a quick, fun and easy course in less than a hour.",
+    list2: "The course is less than full dinner for two.",
+    list3: "Learn and earn Bitcoin $BTC 💻 with no middleman fees. ",
+    list4: "Work remotely and level up TWERK.DANCE",
+    ctaUrl: "https://fun.luvnft.com/courses/bitcoin-ordinals-for-beginners-%f0%9f%aa%99%f0%9f%92%96/"
+  },
+  { 
+    title: "LEARN $SOL", 
+    subtitle: "📗", 
+    description: "Take a quick, fun and affordable LUV NFT FUN social course to learn how accept Solana $WATAA tips to level up on TWERK.DANCE.", 
+    img: "Ads", 
+    list1: "$WATAA starting less than .1 cent",
+    list2: "Level up the leaderboard based on the amount of $WATAA tips received",
+    list3: "Pay for livestream show TV ADS in $WATAA",
+    list4: "Build your Solana 💼 💰 $SOL bag",
+    ctaUrl: "https://pump.fun/coin/DKrZp2YpejxEFzpS9B5cRyr6U28zoNfHWX4pijTcpump"
+  },
+  { 
+    title: "MINT L$VE", 
+    subtitle: "Tips", 
+    description: "💸 New Money, Who Dis?",
     img: "Hahz", 
     list1: "Take a 📙 Bitcoin Ordinal course",
     list2: "Monetize ❤️‍🔥 L$VE [Mint, Sell & Repeat]",
-    list3: "Build your 💰 Bitcoin bag 📈",
-    list4: "Level up to the 👑 Top 5 in your city",
-    ctaUrl: "https://pump.fun/coin/DKrZp2YpejxEFzpS9B5cRyr6U28zoNfHWX4pijTcpump"
-  },
-  {
-    title: "TV",
-    subtitle: "Blockchain TikTok",
-    description: "📺 TV™ 🍑✨—Post twerk vids. Get crypto tips. No middleman. Just straight L$VE. 💸🔥",
-    img: "TV",
-    list1: "Upload + earn",
-    list2: "Global twerk stage",
-    list3: "Crypto direct to wallet",
-    list4: "Just twerk. Just tip.",
-    ctaUrl: "https://tv.twerk.dance"
-  },
-  { 
-    title: "REELS",
-    subtitle: "Upvote",
-    description: "🔥 Post a reel. Hit 50 up-votes. Get a livestream slot. Fans, get your bags ready! Sign up to LUV NFT FUN and submit your 11 sec reel twerking.💼💃", 
-    img: "PPV", 
-    list1: "Viral = live show",
-    list2: "Fans vote you in",
-    list3: "Clips = casting call",
-    list4: "Auto-scheduled gigs",
-    ctaUrl: "https://fun.luvnft.com"
-  },
-  { 
-    title: "L$VE", 
-    subtitle: "Bitcoin", 
-    description: "📙 Learn how to mint L$VE & twerk globally for tips in Bitcoin. Stack sats while you shake 🍑💻", 
-    img: "Love", 
-    list1: "Learn to mint",
-    list2: "Global twerk income",
-    list3: "Connect to crypto fans",
-    list4: "Build your twerk biz",
-    ctaUrl: "https://fun.luvnft.com/courses/bitcoin-ordinals-for-beginners-%f0%9f%aa%99%f0%9f%92%96/"
+    list3: "Build your 💰 Bitcoin bag 📈 by accepting $BTC for your livestream time",
+    list4: "Level up to the 👑 Top 5 Twerkrz in your city",
+    ctaUrl: "https://unisat.io/explorer/brc20/L%24VE"
   },
   { 
     title: "$WATAA", 
     subtitle: "Solana", 
-    description: "Take a quick, fun and affordable LUV NFT FUN social course to learn how accept Solana $WATAA tips to level up on TWERK.DANCE.", 
-    img: "Ads", 
+    description: "Learn how to mint, tip and sell Solana 🌊 $WATAA memecoin tips to become featured on the top 5 tipped Twerkz chart.", 
+    img: "Wataa", 
     list1: "$WATAA starting less than .1 cent",
     list2: "Pay for livestream show TV ADS in $WATAA",
     list3: "Build your 💼 Solana 💰 bag",
     list4: "Instant viral potential",
     ctaUrl: "https://pump.fun/coin/DKrZp2YpejxEFzpS9B5cRyr6U28zoNfHWX4pijTcpump"
   },
+  {
+    title: "TV",
+    subtitle: "TwerkTok",
+    description: "📺 TV™ 🍑✨—Post Twerkz vids. Receive crypto tips. No middleman. Just straight L$VE. 💸🔥",
+    img: "TV",
+    list1: "Promote Twerkrz Shows",
+    list2: "Promote Twerkrz Dmerch",
+    list3: "Promote Twerkrz Events",
+    list4: "Promote Twerkrz Verzuz",
+    ctaUrl: "https://tv.twerk.dance"
+  },
   { 
-    title: "SUB", 
-    subtitle: "Gemologist", 
-    description: "Subscribe to become a 🍑📈 Gemologist twerk trader. Join the Telegram. Build NFT bags. The more cake you own, the more cake you see 🍰👀.", 
-    img: "Find", 
-    list1: "Trade twerk LUV NFTs",
-    list2: "Private squad access",
-    list3: "Daily alpha & drops",
-    list4: "Learn from booty billionaires",
-    ctaUrl: "https://t.me/+1aj06-wtA1kyMzcx"
+    title: "PROMO",
+    subtitle: "LUV NFT FUN",
+    description: "Tired of your 💼 adult content getting banned on socials? Join LUV NFT FUN social and promote your Twerkz.", 
+    img: "Ads", 
+    list1: "Sign up with your Phantom wallet username",
+    list2: "Accept Bitcoin L$VE and Solana $WATAA",
+    list3: "Promote livestream events",
+    list4: "Create a branded TWERK.DANCE fan club",
+    ctaUrl: "https://fun.luvnft.com"
+  },
+  { 
+    title: "PPV.CASH", 
+    subtitle: "Earn $TON", 
+    description: "Promote a sample of your twerkz on PPV.CASH and earn Telegram $TON.", 
+    img: "TV", 
+    list1: "Edit a video clip to 11 secs",
+    list2: "Download the TonKeeper wallet in your mobile app store and top up your wallet with $5 USD ->$TON",
+    list3: "Connect your TonKeeper wallet to PPV.CASH",
+    list4: "Receive small payments in $TON every time some pays to watch your PPV",
+    ctaUrl: "https://ppv.cash"
   },
   { 
     title: "ORANGE", 
     subtitle: "Adult Livestream", 
-    description: "💃 Twerk Dancers subscribe to our private Telegram or sign up to the public LUV NFT FUN social, then 🟠 Set livestream room rates and post your crypto wallet addy.", 
+    description: "💃 Twerkrz 🟠 livestream private show rooms.", 
     img: "Z", 
-    list1: "Accept crypto to 💬 chat",
-    list2: "Accept crypto to 💃 twerk",
-    list3: "Receive crypto gifts",
-    list4: "No $WATAA tips, no show",
+    list1: "Set your Bitcoin 🧡 L$VE show rate",
+    list2: "Sell your Dmerch live in exchange for on demand twerktainment",
+    list3: "Sell livestream show 🔥 clips as Dmerch",
+    list4: "Accept crypto tips 💬 in the chat",
     ctaUrl: "https://orange.twerk.dance"
   },
 ];
@@ -86,10 +108,11 @@ const services: Array<ServiceItem & { ctaUrl: string }> = [
 
 <ContentSection title="TWERKONOMY" id="solutions">
   <Fragment slot="lead">
-    Everyone’s winning in our trickle-up Twerkonomy! 💸 With Solana $WATAA starting at less than 1 brown penny and Bitcoin
-    L$VE cheaper than a product at DollaTree, the TWERK.DANCE currency is gonna grow naturally with all the tips and hype 🔥.
-    Unlike OnlyFans, which keeps 30% from content creators, we’re all about the Twerk Fam — paying our dancers 95/5 and letting
-    them keep 100% of those tips. 🙌
+    Everybody’s eatin’ in our trickle-up Twerkonomy 💸 — powered by fans who hold digital A$$-ets
+    reppin’ their fave twerk stars 💃🍑✨. Make it rain 🌊 $WATAA on-chain, show some Bitcoin L$VE 🧡,
+    and help us crown the top 5 twerkers worldwide live — starting in the U.S. 🇺🇸🔥
+    <br></br>
+    Forget OnlyFans takin’ 30% 👎 — we do 95/5 splits and dancers keep 100% of their tips. 🙌💃  
   </Fragment>
 
   {

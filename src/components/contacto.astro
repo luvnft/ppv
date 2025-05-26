@@ -4,14 +4,16 @@ const { site } = Astro;
 ---
 
 <ContentSection title="Contact" id="contact">
-  <Fragment slot="lead">
-    <span>
-      Do you have a unique <span class="text-primary">TWERK.DANCE</span> show idea you'd like to share with us?
-    </span>
-  </Fragment>
+  <span slot="lead">
+    Looking for a new way to make money online? 💻✨<br>
+    Love to dance and show off your personality? 🍑💃<br>
+    Whether you’re on OnlyFans or just looking for a flexible way to earn, TWERK.DANCE lets you go live, grow your fanbase, and get paid to do what you love. No agents. No gatekeepers. Just you, your audience, and your vibe. 💕📲 <br>
+    Get tips, grow your following, and join a supportive community of bold, confident women turning their energy into income. 💸✨<br>
+    Apply now and start building your brand — one move at a time. 🚀<br>
+  </span>
 
   <section>
-    <div class="mx-auto px-4 py-8 mobile:min-w-96 md:min-w-176 lg:py-6">
+    <div class="mx-auto px-4 py-8 sm:min-w-96 md:min-w-176 lg:py-6">
       <form
         class="space-y-8"
         accept-charset="utf-8"
@@ -65,14 +67,14 @@ const { site } = Astro;
 
         <button
           type="submit"
-          class="min-w-72 mobile:min-w-96 md:min-w-176 rounded-lg bg-gradient-to-br from-yellow-500 to-yellow-600 px-5 py-3 text-center text-sm font-medium text-white duration-300 hover:scale-105 focus:outline-none focus:ring-4"
+          class="min-w-72 sm:min-w-96 md:min-w-176 rounded-lg bg-gradient-to-br from-yellow-500 to-yellow-600 px-5 py-3 text-center text-sm font-medium text-white duration-300 hover:scale-105 focus:outline-none focus:ring-4"
         >
           Send Message
         </button>
 
         <!-- FormSubmit.co hidden inputs -->
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value={`${site}`} />
+        <input type="hidden" name="_next" value={site} />
         <input type="hidden" name="_template" value="box" />
         <input type="hidden" name="_cc" value="ppv@twerk.dance" />
       </form>
